@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+
+            <div class="header">
+
+                <p>Rock Paper Scissor</p>
+                <p>Select A Move</p>
+
+            </div>
+
+            <div class="moves-container">
+                
+                <div class="rock-box">
+                    <img class="moves-image" src="resources/rock.jpeg" alt="Rock">
+                </div>
+                
+                <div class="paper-box">
+                    <img class="moves-image" src="resources/paper.jpeg" alt="Rock">
+                </div>
+
+                <div class="scissor-box">
+                    <img class="moves-image" src="resources/scissor.jpeg" alt="Rock">
+                </div>
+
+            </div> <!--moves container-->
+
+            <div class="result">
+                <p>You Won</p>
+            </div>
+
+            <div class="versus-output">
+
+                <div class="your-pick">
+                    <p>You</p>
+                    <img class="moves-image" src="resources/scissor-transparent.png" alt="Scissor">
+                </div>
+
+                <div>
+                    <p class="vs">VS</p>
+                </div>
+
+                
+                <div class="computer-pick">
+                    <img class="moves-image" src="resources/paper-transparent.png" alt="Scissor">
+                    <p>Computer</p>
+                </div>
+
+            </div> <!--versus-output-->
+
+            <div class="score-board">
+
+                <p>Wins: 2</p>
+                <p>Loses: 1</p>
+                <p>Ties: 3</p>
+
+            </div>
+
+            <div class="score-reset">
+                <button class="reset-button">Reset Score</button>
+            </div>
+
+        </div> <!--container-->
+
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
