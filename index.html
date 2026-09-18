@@ -9,7 +9,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <main>
@@ -18,35 +19,44 @@
             <div class="header">
 
                 <p class="top-text">Rock Paper Scissor</p>
-                <p class="select-move">Select A Move</p>
+                <p class="select-move">Please Select A Move</p>
 
             </div>
 
             <div class="moves-container">
                 
-                <button class="rock-box">
+                <button class="rock-box" onclick="
+                        decideResult('Rock');
+                    ">
                     <img class="moves-image" src="resources/rock.jpeg" alt="Rock">
                 </button>
                 
-                <button class="paper-box">
+                <button class="paper-box" onclick="
+                    decideResult('Paper');
+                ">
                     <img class="moves-image" src="resources/paper.jpeg" alt="Rock">
                 </button>
 
-                <button class="scissor-box">
+                <button class="scissor-box" onclick="
+                    decideResult('Scissor');
+                ">
                     <img class="moves-image" src="resources/scissor.jpeg" alt="Rock">
                 </button>
 
             </div> <!--moves container-->
 
             <div class="result">
-                <p class="result-text">You Won</p>
+                <p class="result-text">Result</p>
             </div>
 
             <div class="versus-box">
 
                 <div class="your-pick">
                     <p>You -</p>
-                    <img src="resources/scissor-transparent.png" alt="Scissor">
+
+                    <div class="empty-icon-box">
+                        <img class="player-move-icon" >
+                    </div>
                 </div>
 
                 <div>
@@ -55,28 +65,37 @@
 
                 
                 <div class="computer-pick">
-                    <img src="resources/paper-transparent.png" alt="Scissor">
+                    
+                    <div class="empty-icon-box">
+                        <img class="computer-move-icon" >
+                    </div>
+
                     <p>- Computer</p>
+                
                 </div>
 
-            </div> <!--versus-output-->
+            </div> <!--versus-box-->
 
             <div class="score-board">
 
-                <p class="wins">Wins: 2</p>
-                <p class="loses">Loses: 1</p>
-                <p class="ties">Ties: 3</p>
+                <p class="scores">Wins: 0 - Loses: 0 - Ties: 0</p>
 
             </div>
 
             <div class="score-reset">
-                <button class="reset-button">Reset Score</button>
+                <button class="reset-button" onclick="
+                    scoreReset();
+                    ">Reset Score</button>
             </div>
 
         </div> <!--container-->
 
+        
     </main>
-
+    
+    <div class="signature-box">
+       <p class="signature"> Created by faysal-ahmed-dev </p>
+    </div>
 
     <script src="script.js"></script>
 </body>
