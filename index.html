@@ -6,6 +6,10 @@
     <title>Rock Paper Scissor</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -13,24 +17,24 @@
 
             <div class="header">
 
-                <p>Rock Paper Scissor</p>
+                <p class="top-text">Rock Paper Scissor</p>
                 <p>Select A Move</p>
 
             </div>
 
             <div class="moves-container">
                 
-                <div class="rock-box">
+                <button class="rock-box">
                     <img class="moves-image" src="resources/rock.jpeg" alt="Rock">
-                </div>
+                </button>
                 
-                <div class="paper-box">
+                <button class="paper-box">
                     <img class="moves-image" src="resources/paper.jpeg" alt="Rock">
-                </div>
+                </button>
 
-                <div class="scissor-box">
+                <button class="scissor-box">
                     <img class="moves-image" src="resources/scissor.jpeg" alt="Rock">
-                </div>
+                </button>
 
             </div> <!--moves container-->
 
@@ -38,11 +42,11 @@
                 <p>You Won</p>
             </div>
 
-            <div class="versus-output">
+            <div class="versus-box">
 
                 <div class="your-pick">
-                    <p>You</p>
-                    <img class="moves-image" src="resources/scissor-transparent.png" alt="Scissor">
+                    <p>You -</p>
+                    <img src="resources/scissor-transparent.png" alt="Scissor">
                 </div>
 
                 <div>
@@ -51,17 +55,17 @@
 
                 
                 <div class="computer-pick">
-                    <img class="moves-image" src="resources/paper-transparent.png" alt="Scissor">
-                    <p>Computer</p>
+                    <img src="resources/paper-transparent.png" alt="Scissor">
+                    <p>- Computer</p>
                 </div>
 
             </div> <!--versus-output-->
 
             <div class="score-board">
 
-                <p>Wins: 2</p>
-                <p>Loses: 1</p>
-                <p>Ties: 3</p>
+                <p class="wins">Wins: 2</p>
+                <p class="loses">Loses: 1</p>
+                <p class="ties">Ties: 3</p>
 
             </div>
 
