@@ -24,7 +24,7 @@ main{
     border: none;
     border-radius: 20px;
     box-shadow: 2px 2px 10px rgba(165, 165, 165, 0.2);
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .header{
@@ -39,6 +39,11 @@ main{
     color: rgb(255, 140, 0);
 
     margin: 20px 10px 30px 10px;
+}
+
+.select-move{
+    color: rgb(211, 21, 145);
+    font-size: 18px;
 }
 .moves-container{
     display: flex;  
@@ -75,11 +80,23 @@ main{
     opacity: 0.8;
 }
 
+@media(max-width: 470px){
+    .moves-image{
+        height: 80px;
+    }
+}
+
 .result{
+    margin: 20px 0px;
+}
+.result-text{
     font-size: 30px;
     font-weight: bold;
     color: crimson;
+    padding: 10px;
     margin-bottom: 20px;
+    border: 2px solid rgb(219, 106, 106);
+    border-radius: 10px;
 }
 
 .versus-box, .result, .your-pick, .computer-pick{
@@ -100,6 +117,12 @@ main{
     opacity: 0.8;
 }
 
+@media(max-width: 470px){
+    .your-pick img, .computer-pick img{
+        height: 50px;
+    }
+}
+
 .score-board{
     display: flex;
     justify-content: center;
@@ -115,6 +138,13 @@ main{
     padding: 10px;
 }
 
+@media(max-width: 470px){
+   .score-board{
+    width: 85%;
+    margin: 30px 8%;
+    }      
+}
+
 .wins{
     color: green;
 }
@@ -127,7 +157,8 @@ main{
 .score-reset{
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .reset-button{
