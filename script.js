@@ -17,13 +17,13 @@ function compPick(){
     let compPick = '';
 
     if(randValue >= 0 && randValue < 1/3){
-        compPick = 'Rock';
+        compPick = 'rock';
     }
     else if(randValue >= 1/3 && randValue < 2/3){
-        compPick = 'Paper';
+        compPick = 'paper';
     }
     else{
-        compPick = 'Scissor';
+        compPick = 'scissor';
     }
 
     return compPick;
@@ -33,11 +33,11 @@ function decideResult(rps){
     const compGuess = compPick();
     let result = '';
     
-    if(rps === 'Rock'){
-        if( compGuess == 'Rock'){
+    if(rps === 'rock'){
+        if( compGuess === 'rock'){
             result = 'Tie';
         }
-        else if(compGuess === 'Paper'){
+        else if(compGuess === 'paper'){
             result = 'You Lose';
         }
         else{
@@ -45,11 +45,11 @@ function decideResult(rps){
         }
     }
 
-    else if(rps === 'Paper'){
-        if( compGuess == 'Rock'){
+    else if(rps === 'paper'){
+        if( compGuess === 'rock'){
             result = 'You Won';
         }
-        else if(compGuess === 'Paper'){
+        else if(compGuess === 'paper'){
             result = 'Tie';
         }
         else{
@@ -57,11 +57,11 @@ function decideResult(rps){
         }
     }
 
-    else if(rps === 'Scissor'){
-        if( compGuess == 'Rock'){
+    else if(rps === 'scissor'){
+        if( compGuess === 'rock'){
             result = 'You Lose';
         }
-        else if(compGuess === 'Paper'){
+        else if(compGuess === 'paper'){
             result = 'You Won';
         }
         else{
