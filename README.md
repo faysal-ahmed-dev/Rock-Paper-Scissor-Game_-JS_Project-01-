@@ -1,4 +1,5 @@
 # Rock Paper Scissors Game 🎮
+Play the game: https://rock-paper-scissor-iota-sable.vercel.app/
 
 A simple Rock Paper Scissors game built with **HTML, CSS, and JavaScript**.
 
